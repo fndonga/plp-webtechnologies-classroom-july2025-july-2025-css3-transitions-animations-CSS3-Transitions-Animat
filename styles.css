@@ -1,0 +1,89 @@
+/* ===== General Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ===== Part 1: Button Hover & Transition ===== */
+.hover-btn {
+    background-color: #008cba;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.hover-btn:hover {
+    background-color: #005f75;
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+/* ===== Part 2: Box Animation ===== */
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733;
+    margin: 20px auto;
+    transition: all 0.5s ease; /* Smooth change of size/rotation */
+}
+
+.animate {
+    transform: rotate(360deg) scale(1.5);
+    background-color: #33c1ff;
+}
+
+/* ===== Part 4: Card Flip ===== */
+.card {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px auto;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.card-front {
+    background-color: #4CAF50;
+}
+
+.card-back {
+    background-color: #f44336;
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease-in-out;
+}
