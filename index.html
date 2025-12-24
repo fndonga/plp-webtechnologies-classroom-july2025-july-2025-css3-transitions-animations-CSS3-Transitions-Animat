@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JS Animation Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Animation Demo</h1>
+    </header>
+
+    <main>
+        <!-- Section 1: Button Hover & Transition -->
+        <section id="button-section">
+            <h2>Button Hover Transitions</h2>
+            <button class="hover-btn">Hover Me!</button>
+        </section>
+
+        <!-- Section 2: Box Animation Triggered by JS -->
+        <section id="box-section">
+            <h2>Box Animation</h2>
+            <div id="animatedBox"></div>
+            <button id="animateBoxBtn">Animate Box</button>
+        </section>
+
+        <!-- Section 3: Function Scope and Counter -->
+        <section id="counter-section">
+            <h2>Reusable Counter Function</h2>
+            <p>Count: <span id="counterValue">0</span></p>
+            <button onclick="incrementCounter(1)">Increment</button>
+            <button onclick="incrementCounter(-1)">Decrement</button>
+        </section>
+
+        <!-- Section 4: Card Flip -->
+        <section id="card-section">
+            <h2>Card Flip Animation</h2>
+            <div class="card" id="flipCard">
+                <div class="card-front">Front</div>
+                <div class="card-back">Back</div>
+            </div>
+            <button onclick="flipCard()">Flip Card</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Animation Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
